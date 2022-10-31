@@ -1,0 +1,2 @@
+{'Pipoca': 1, 'Refrigerante': 0, 'Chocolate': 0}
+{'Pagamento': 'Dinheiro'}
