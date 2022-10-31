@@ -1,5 +1,11 @@
 import os
 
+def limpaarquivo():
+    # Abre o arquivo .txt
+    with open("registro_cliente.txt", "w") as arquivo:
+        # Salva o Dicionário do arquivo
+        arquivo.write("")
+
 # Função para registrar a escolha da bomboniere
 def salvar_itens(bomboniere):
     # Abre o arquivo .txt
@@ -28,6 +34,15 @@ def ticket():
             dicio = eval(linha)
             # Percorre o Dicionário
             for chave, valor in dicio.items():
+                if chave == "nome":
+                    print("\n- Cliente Premium\n")
+
+                if chave == "filme":
+                    print("\n- Seu Filme\n")
+                
+                if chave == "Poltrona":
+                    print("\n- Sua Poltrona\n")
+
                 # Verifica se é a primeira chave de cada Dicionário
                 if chave == "Pipoca":
                     # Imprimi a Label Bomboniere

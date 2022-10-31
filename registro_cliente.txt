@@ -1,2 +1,0 @@
-{'Pipoca': 5, 'Refrigerante': 2, 'Chocolate': 0}
-{'Pagamento': 'Cartão'}

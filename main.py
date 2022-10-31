@@ -1,5 +1,5 @@
 # Importa as funçôes da controller
-from controller import salvar_itens, salvar_pagamento, ticket
+from controller import salvar_itens, salvar_pagamento, ticket, limpaarquivo
 
 # Funcao do Menu Bomboniere
 def menu_bomboniere():
@@ -93,6 +93,7 @@ def menu_pagamento():
             case _:
                 print("\nOpção inválida.")
 
+limpaarquivo()
 
 menu_bomboniere()
 
