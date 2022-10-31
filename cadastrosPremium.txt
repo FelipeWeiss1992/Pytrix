@@ -1,1 +1,1 @@
-{'nome': 'Felipe', 'cpf': 2545345}
+{'nome': 'Felipe', 'cpf': 8739489981, 'telefone': 4734568458, 'datanasc': 24081992}
