@@ -1,19 +1,26 @@
 import os
 
+# Função para registrar a escolha da bomboniere
 def salvar_itens(bomboniere):
+    # Abre o arquivo .txt
     with open("registro_cliente.txt", "a") as arquivo:
+        # Salva o Dicionário do arquivo
         arquivo.write(f"{bomboniere}\n")
 
 
+# Função para registrar a forma de pagamento
 def salvar_pagamento(forma_pagamento):
+    # Abre o arquivo .txt
     with open("registro_cliente.txt", "a") as arquivo:
+        # Salva o Dicionário do arquivo
         arquivo.write(f"{forma_pagamento}\n")
 
 
+# Função para impressão do ticket do cliente 
 def ticket():
     # Limpa a tela
     os.system("cls")
-    # Abre o arquivo
+    # Abre o arquivo .txt
     with open("registro_cliente.txt", "r") as arquivo:
         # Percorre as linhas do arquivo
         for linha in arquivo:
