@@ -1,7 +1,7 @@
 # importando biblioteca
 from time import sleep
 # importando as funcoes
-from controller import cadastrarcliente, saudacao
+from controller import saudacao, cadastrarcliente
 
 # definindo a função Menu
 def menu():
@@ -32,5 +32,5 @@ def menu():
             else:
                 #caso a opcao seja não irá direto pro menu
                 break
-
+            
 menu()            
