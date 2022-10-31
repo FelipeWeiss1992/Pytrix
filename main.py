@@ -34,27 +34,34 @@ def menu_pagamento():
 
     forma_pagamento = {}
 
-    print("""
-    [ 1 ] = Dinheiro
-    [ 2 ] = Cartão
-    [ 3 ] = Pix
-    """)
+    while True:
+        print("""
+        [ 1 ] = Dinheiro
+        [ 2 ] = Cartão
+        [ 3 ] = Pix
+        """)
 
-    opcao = str(input("Escolha uma opção: "))
+        opcao = str(input("Escolha uma opção: "))
 
-    match opcao:
-        case "1":
-            forma_pagamento["Pagamento"] = "Dinheiro"
-        case "2":
-            forma_pagamento["Pagamento"] = "Cartão"
-        case "3":
-            forma_pagamento["Pagamento"] = "Pix"
-        case _:
-            print("\nOpção inválida.")
+        match opcao:
+            case "1":
+                forma_pagamento["Pagamento"] = "Dinheiro"
+                salvar_pagamento(forma_pagamento)
+                break
+            case "2":
+                forma_pagamento["Pagamento"] = "Cartão"
+                salvar_pagamento(forma_pagamento)
+                break
+            case "3":
+                forma_pagamento["Pagamento"] = "Pix"
+                salvar_pagamento(forma_pagamento)
+                break
+            case _:
+                print("\nOpção inválida.")
 
-    salvar_pagamento(forma_pagamento)
 
+menu_bomboniere()
 
-#menu_bomboniere()
-#menu_pagamento()
+menu_pagamento()
+
 ticket()
