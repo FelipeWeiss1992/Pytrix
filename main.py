@@ -137,6 +137,8 @@ def menu_bomboniere():
 
     # Cria uma estrutura de repetição para o Menu Bomboniere
     while opcao != "4":
+        os.system("cls")
+        print('Escolha o seu item de bomboniere')
         print("[ 1 ] = Pipoca\n[ 2 ] = Refrigerante\n[ 3 ] = Chocolate\n[ 4 ] = Sair...")
         
 
@@ -187,7 +189,7 @@ def menu_pagamento():
         print("[ 1 ] = Dinheiro\n[ 2 ] = Cartão\n[ 3 ] = Pix")
 
         # Variável recebe a opção do Menu forma de PagaMENTO
-        opcao = str(input("Escolha uma opção: "))
+        opcao = str(input("Escolha uma opção: \n"))
 
         # Switch com as opções da Bomboniere
         match opcao:
@@ -217,6 +219,7 @@ def menu_pagamento():
                 print("\nOpção inválida.")
 
     os.system("cls")
+    sleep(1)
 
 #Programa principal
 #Chamando as funções
