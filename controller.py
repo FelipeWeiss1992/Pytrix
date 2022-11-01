@@ -25,7 +25,6 @@ def limparticket():
     with open('registro_cliente.txt', 'w') as arquivo:
         arquivo.write(str(""))
 
-
 # funcao de  salvar o cliente no arquivo txt
 def cadastrarcliente(cliente):
     with open('registro_cliente.txt', 'a') as arquivo:
@@ -57,8 +56,6 @@ def salvar_pagamento(forma_pagamento):
 
 # Função para impressão do ticket do cliente 
 def ticket():
-    # Limpa a tela
-    os.system("cls")
     # Abre o arquivo .txt
     with open("registro_cliente.txt", "r") as arquivo:
         # Percorre as linhas do arquivo
@@ -70,7 +67,7 @@ def ticket():
                 # Verifica se é a primeira chave de cada Dicionário
                 if chave == "nome":
                     # Imprimi a Label Premium   
-                    print('\n- CLiente Premium\n')
+                    print('\n- Cliente Premium\n')
                 # Verifica se é a primeira chave de cada Dicionário
                 if chave == 'Filme':
                     # Imprimi a Label Filme  
@@ -78,7 +75,7 @@ def ticket():
                 # Verifica se é a primeira chave de cada Dicionário
                 if chave == 'Poltrona':
                     # Imprimi a Label Poltrona
-                    print('\nPoltrona escolhida\n')    
+                    print('\n- Poltrona escolhida\n')    
                 # Verifica se é a primeira chave de cada Dicionário
                 if chave == "Pipoca":
                     # Imprimi a Label Bomboniere
