@@ -1,4 +1,4 @@
-# importando biblioteca
+# importando as bibliotecas
 from time import sleep
 import os
 
@@ -37,7 +37,9 @@ def menuPremium():
             else:
                 #caso a opcao seja não irá direto pro menu
                 os.system("cls")
+                sleep(1)
                 break
+                
 
 # Função Menu Filme
 def menufilme():

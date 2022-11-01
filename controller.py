@@ -1,6 +1,5 @@
-#importando as bibliotecas
+#importando a biblioteca
 from datetime import datetime
-import os
 
 #criando a funcao saudação
 def saudacao():
@@ -88,4 +87,4 @@ def ticket():
                 print(f"   * {chave} ----- {valor}")
 
         # Imprime a saudação final
-        print("\n", "-" * 5, "Volte Sempre", "-" * 5)
+        print("\n", "-" * 5, "Bom Filme, Volte Sempre", "-" * 5)
