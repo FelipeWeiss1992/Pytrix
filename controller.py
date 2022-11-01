@@ -65,7 +65,7 @@ def ticket():
             # Percorre o Dicionário
             for chave, valor in dicio.items():
                 # Verifica se é a primeira chave de cada Dicionário
-                if chave == "nome":
+                if chave == "Nome":
                     # Imprimi a Label Premium   
                     print('\n- Cliente Premium\n')
                 # Verifica se é a primeira chave de cada Dicionário

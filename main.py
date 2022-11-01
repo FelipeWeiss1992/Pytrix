@@ -137,6 +137,7 @@ def menu_bomboniere():
 
     # Cria uma estrutura de repetição para o Menu Bomboniere
     while opcao != "4":
+        print('Selecione o item de bomboniere')
         print("[ 1 ] = Pipoca\n[ 2 ] = Refrigerante\n[ 3 ] = Chocolate\n[ 4 ] = Sair...")
         
 
