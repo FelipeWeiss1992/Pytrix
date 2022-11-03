@@ -5,7 +5,7 @@ import os
 # importando as funcoes
 from controller import saudacao, cadastrarcliente, salvar_itens, salvar_pagamento, ticket, salvarfilme, salvarpoltrona, limparticket
 
-# Função Menu Forma de menuPremium
+# Função Menu de clientePremium
 def menuPremium():
     # chamando a funcao saudação da controller
     saudacao()
@@ -90,7 +90,7 @@ def menufilme():
     os.system("cls")  
     sleep(1)
 
-# Função Menu Forma de Poltrona    
+# Função Menu de Poltrona    
 def menupoltrona():
         #ofertar as opções de poltronas dentro de uma lista, e se possível - deve-se eliminar a opção selecionada pelo anterior.
         listaPoltronas = ["A1", "A2", "A3", "A4", "A5", "B1", "B2", "B3", "B4", "B5"]
@@ -115,7 +115,7 @@ def menupoltrona():
         os.system("cls")        
         sleep(1)
 
-# Função Menu Forma de Bomboniere
+# Função Menu de Bomboniere
 def menu_bomboniere():
     while True: 
         bombonieri = input("Você gostaria de algum item de bomboniere? S ou N \nQual opção: [S/N] ").strip().upper()
