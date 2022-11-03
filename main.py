@@ -1,4 +1,4 @@
-# importando biblioteca
+# importando as bibliotecas
 from time import sleep
 import os
 
@@ -13,32 +13,33 @@ def menuPremium():
     while True:
             # criando a variavel de selecao da opcao premium
             clientePremium = str(input("Você gostaria de ser cliente Pytrix Premium e ter acesso à vários benefícios, como desconto em ingressos, bomboniere, e prioridade na escolha de assento? \nEsse cadastro é totalmente gratuito e sem outras taxas*:  [S/N] ")).strip().upper()
-
+            # caso a opcao digitada nao for S ou N, vai ficar em um loop até digitar a opção correta.
             while True:
                 if clientePremium not in 'SN':
                     print('Opção Inválida, digite somente S ou N')
                     clientePremium = str(input("Você gostaria de ser cliente Pytrix Premium e ter acesso à vários benefícios, como desconto em ingressos, bomboniere, e prioridade na escolha de assento? \nEsse cadastro é totalmente gratuito e sem outras taxas*:  [S/N] ")).strip().upper()
-                    sleep(1)
+                    sleep(0.5)
                 else:
                     break    
                 # condicao caso cliente premium for sim
             if clientePremium in 'S':
                 # criando um dicionario vazio
                 cliente = {}
-                # inserindo os dados na variavel cliente via input
+                # inserindo os dados no dicionario cliente via input
                 cliente["Nome"] = str(input("Digite seu Nome: "))
                 cliente["CPF"] = str(input("Digite seu CPF: "))
                 cliente["Telefone"] = str(input("Digite Seu Telefone: "))
                 cliente["Datanasc"] = str(input("Data de Nascimento: "))
-                # gravando os dados inseridos no dicionario cliente dentro do arquivo txt
+                # gravando os dados inseridos no dicionario cliente dentro do arquivo txt usando a função
                 cadastrarcliente(cliente.copy())
                 os.system("cls")
                 break
             else:
-                #caso a opcao seja não irá direto pro menu
+                #caso a opcao seja não irá direto pro menu filme
                 os.system("cls")
+                sleep(0.5)
                 break
-
+                
 # Função Menu Filme
 def menufilme():
     while True:
@@ -85,10 +86,10 @@ def menufilme():
             case _:
                 print("\nOpção inválida.")
                 print("\nEscolha um dos filmes em cartaz. \n")
-                sleep(1)
+                sleep(0.5)
         
     os.system("cls")  
-    sleep(1)
+    sleep(0.5)
 
 # Função Menu Forma de Poltrona    
 def menupoltrona():
@@ -113,7 +114,7 @@ def menupoltrona():
                     break
             break    
         os.system("cls")        
-        sleep(1)
+        sleep(0.5)
 
 # Função Menu Forma de Bomboniere
 def menu_bomboniere():
@@ -137,42 +138,49 @@ def menu_bomboniere():
 
     # Cria uma estrutura de repetição para o Menu Bomboniere
     while opcao != "4":
+        print('Selecione o item de bomboniere')
         print("[ 1 ] = Pipoca\n[ 2 ] = Refrigerante\n[ 3 ] = Chocolate\n[ 4 ] = Sair...")
         
 
         # Variável recebe a opção do Menu
         opcao = str(input("Escolha uma opção: "))
-
+        
+        
         # Switch com as opções da Bomboniere
         match opcao:
             # Se opção for 1
             case "1":
                 # Inserindo ou incrementa no Dicionário
                 bomboniere["Pipoca"] += int(input("\nInforme a quantidade: "))
-                sleep(1)
+                os.system("cls")
+                sleep(0.5)
             # Se opção for 2
             case "2":
                 # Inserindo ou incrementa no Dicionário
                 bomboniere["Refrigerante"] += int(input("\nInforme a quantidade: "))
-                sleep(1)
+                os.system("cls")
+                sleep(0.5)
             # Se opção for 3
             case "3":
                 # Inserindo ou incrementa no Dicionário
                 bomboniere["Chocolate"] += int(input("\nInforme a quantidade: "))
-                sleep(1)
+                os.system("cls")
+                sleep(0.5)
             # Se opção for 4
             case "4":
                 # Sai do menu
                 print("\nFinalizando a bomboniere.\n")
-                sleep(1)
+                os.system("cls")
+                sleep(0.5)
             # Se opção for válida
             case _:
                 # Informa opção inválida
                 print("\nOpção inválida.")
-                sleep(1)
+                os.system("cls")
+                sleep(0.5)
 
     os.system("cls")
-    sleep(1)            
+    sleep(0.5)            
 
 # Função Menu Forma de Pagamento
 def menu_pagamento():

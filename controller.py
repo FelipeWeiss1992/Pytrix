@@ -1,6 +1,5 @@
-#importando as bibliotecas
+#importando a biblioteca
 from datetime import datetime
-import os
 
 #criando a funcao saudação
 def saudacao():
@@ -65,7 +64,7 @@ def ticket():
             # Percorre o Dicionário
             for chave, valor in dicio.items():
                 # Verifica se é a primeira chave de cada Dicionário
-                if chave == "nome":
+                if chave == "Nome":
                     # Imprimi a Label Premium   
                     print('\n- Cliente Premium\n')
                 # Verifica se é a primeira chave de cada Dicionário
@@ -88,4 +87,4 @@ def ticket():
                 print(f"   * {chave} ----- {valor}")
 
         # Imprime a saudação final
-        print("\n", "-" * 5, "Volte Sempre", "-" * 5)
+        print("\n", "-" * 5, "Bom Filme, Volte Sempre", "-" * 5)

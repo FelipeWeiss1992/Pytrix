@@ -1,2 +1,0 @@
-{'Filme': 'Star Wars IV - Uma Nova Esperança'}
-{'Poltrona': 'A1'}
