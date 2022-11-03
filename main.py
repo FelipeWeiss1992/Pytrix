@@ -172,7 +172,8 @@ def menu_bomboniere():
                 # Informa opção inválida
                 print("\nOpção inválida.")
                 sleep(1)
-
+    
+    salvar_itens(bomboniere)
     os.system("cls")
     sleep(1)            
 

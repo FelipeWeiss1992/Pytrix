@@ -65,24 +65,24 @@ def ticket():
             # Percorre o Dicionário
             for chave, valor in dicio.items():
                 # Verifica se é a primeira chave de cada Dicionário
-                if chave == "nome":
-                    # Imprimi a Label Premium   
+                if chave == "Nome":
+                    # Imprime a Label Premium   
                     print('\n- Cliente Premium\n')
                 # Verifica se é a primeira chave de cada Dicionário
                 if chave == 'Filme':
-                    # Imprimi a Label Filme  
+                    # Imprime a Label Filme  
                     print('\n- Filme Escolhido\n')    
                 # Verifica se é a primeira chave de cada Dicionário
                 if chave == 'Poltrona':
-                    # Imprimi a Label Poltrona
+                    # Imprime a Label Poltrona
                     print('\n- Poltrona escolhida\n')    
                 # Verifica se é a primeira chave de cada Dicionário
                 if chave == "Pipoca":
-                    # Imprimi a Label Bomboniere
+                    # Imprime a Label Bomboniere
                     print("\n- Bomboniere\n")
                 # Verifica se é a primeira chave de cada Dicionário
                 if chave == "Pagamento":
-                    # Imprimi a Label Forma de pagamento
+                    # Imprime a Label Forma de pagamento
                     print("\n- Forma de pagamento\n")
                 # Imprime as Chaves e Valores do Dicionário
                 print(f"   * {chave} ----- {valor}")
