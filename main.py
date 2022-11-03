@@ -13,7 +13,7 @@ def menuPremium():
     while True:
             # criando a variavel de selecao da opcao premium
             clientePremium = str(input("Você gostaria de ser cliente Pytrix Premium e ter acesso à vários benefícios, como desconto em ingressos, bomboniere, e prioridade na escolha de assento? \nEsse cadastro é totalmente gratuito e sem outras taxas*:  [S/N] ")).strip().upper()
-
+            # caso a opcao digitada nao for S ou N, vai ficar em um loop até digitar a opção correta.
             while True:
                 if clientePremium not in 'SN':
                     print('Opção Inválida, digite somente S ou N')
@@ -25,17 +25,17 @@ def menuPremium():
             if clientePremium in 'S':
                 # criando um dicionario vazio
                 cliente = {}
-                # inserindo os dados na variavel cliente via input
+                # inserindo os dados no dicionario cliente via input
                 cliente["Nome"] = str(input("Digite seu Nome: "))
                 cliente["CPF"] = str(input("Digite seu CPF: "))
                 cliente["Telefone"] = str(input("Digite Seu Telefone: "))
                 cliente["Datanasc"] = str(input("Data de Nascimento: "))
-                # gravando os dados inseridos no dicionario cliente dentro do arquivo txt
+                # gravando os dados inseridos no dicionario cliente dentro do arquivo txt usando a função
                 cadastrarcliente(cliente.copy())
                 os.system("cls")
                 break
             else:
-                #caso a opcao seja não irá direto pro menu
+                #caso a opcao seja não irá direto pro menu filme
                 os.system("cls")
                 sleep(0.5)
                 break
